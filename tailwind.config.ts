@@ -51,6 +51,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "muted-secondary": "hsl(var(--muted-secondary))",
         "church-blue": "#3b82f6", // blue-500
         "church-purple": "#8b5cf6", // violet-500
         "church-gold": "#f59e0b", // amber-500
