@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-white pt-12 pb-6">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 text-muted-secondary">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Church Info */}
           <div className="space-y-4">
@@ -25,13 +25,13 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5" />
-                <a href="tel:+919553873361" className="hover:underline">
+                <a href="tel:+919553873361" className="hover:underline hover:text-accent">
                 +91 9553873361
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5" />
-                <a href="mailto:smcparishb@gmail.com" className="hover:underline">
+                <a href="mailto:smcparishb@gmail.com" className="hover:underline hover:text-accent">
                 smcparishb@gmail.com
                 </a>
               </li>
@@ -43,19 +43,22 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 border-b border-white/20 pb-2">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="hover:underline">Home</Link>
+                <Link href="/" className="hover:underline hover:text-accent">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:underline">About Us</Link>
+                <Link href="/mass-services" className="hover:underline hover:text-accent">Mass Schedule</Link>
+              </li>
+              {/* <li>
+                <Link href="/events" className="hover:underline hover:text-accent">Events & Announcements</Link>
+              </li> */}
+              <li>
+                <Link href="/pious-associations" className="hover:underline hover:text-accent">Pious Associations</Link>
               </li>
               <li>
-                <Link href="/mass-services" className="hover:underline">Mass Schedule</Link>
+                <Link href="/gallery" className="hover:underline hover:text-accent">Gallery</Link>
               </li>
               <li>
-                <Link href="/events" className="hover:underline">Events & Announcements</Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:underline">Contact Us</Link>
+                <Link href="/contact" className="hover:underline hover:text-accent">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -63,7 +66,7 @@ const Footer = () => {
           {/* Our Prayer */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4 border-b border-white/20 pb-2">Our Prayer</h3>
-            <p className="text-white/80 leading-relaxed italic">{t("ourPrayer")}</p>
+            <p className="leading-relaxed italic">{t("ourPrayer")}</p>
           </div>
 
           {/* Connect With Us */}
